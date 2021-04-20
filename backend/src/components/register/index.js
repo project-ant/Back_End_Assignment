@@ -5,9 +5,7 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Link,
-    useRouteMatch,
-    useParams
+    Link
   } from "react-router-dom";
 
 const Registration = ({ title, angka }) => {
@@ -39,10 +37,8 @@ const Registration = ({ title, angka }) => {
     console.log("Finish");
   };
 
+  
   return (
-
-    //Routing
-
 
     //JSX
     <div className="container mt-5">
@@ -89,7 +85,7 @@ const Registration = ({ title, angka }) => {
       <br />
       <br />
       <button type="button" onClick={handleSubmit} className="btn btn-primary">
-        Sign In
+        <li><Link to="../dashboard">Sign In</Link></li>
       </button>
     </div>
   );
